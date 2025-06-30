@@ -1,0 +1,52 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    min-height: 100vh;
+    position: relative;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+}
+
+.background-image {
+    width: 100%;
+    min-height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.card-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+    z-index: 1;
+    transform: translateY(650px);
+}
+
+.card {
+    max-width: 30%;
+    min-width: 100px;
+    height: auto;
+    object-fit: contain;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: scale(0.95);
+}

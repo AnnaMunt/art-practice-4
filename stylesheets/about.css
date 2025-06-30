@@ -1,0 +1,65 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    min-height: 100vh;
+    position: relative;
+}
+
+main {
+    min-height: 100vh;
+    position: relative;
+}
+
+.background-image {
+    width: 100%;
+    min-height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.error-button {
+    position: absolute;
+    bottom: -1400px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 600px;
+    width: auto;
+    z-index: 1;
+    transition: transform 0.2s ease;
+}
+
+.error-button:hover {
+    transform: translateX(-50%) scale(0.95);
+}
+
+.error-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    z-index: 999;
+}
+
+.error-fullscreen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hidden {
+    display: none;
+}
